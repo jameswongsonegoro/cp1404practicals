@@ -1,7 +1,4 @@
-"""
-CP1404/CP5632 - Practical
-Pseudocode for temperature conversion
-"""
+"""Converting the temperatures"""
 
 MENU = """C - Convert Celsius to Fahrenheit
 F - Convert Fahrenheit to Celsius
@@ -9,6 +6,7 @@ Q - Quit"""
 
 
 def main():
+    """Converting celsius to fahrenheit and vice versa"""
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
@@ -28,11 +26,13 @@ def main():
 
 
 def calculate_celsius(celsius, fahrenheit):
+    """Calculate fahrenheit to celsius"""
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
 
 def calculate_fahrenheit(celsius):
+    """Calculate celsius to fahrenheit"""
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
