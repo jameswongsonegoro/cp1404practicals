@@ -10,11 +10,12 @@ def main():
     choice = input(">>> ").upper()
     while choice != "Q":
         if choice == "G":
-            score = float(input("Your score: "))
+            score = int(input("Your score: "))
             while score < 0 or score > 100:
                 print("Invalid score")
-                score = float(input("Your score: "))
+                score = int(input("Your score: "))
             print(MENU)
+            choice = input(">>> ").upper()
         elif choice == "P":
             if score < MINIMUM_SCORE or score > MAXIMUM_SCORE:
                 message = "Invalid score"
@@ -25,6 +26,19 @@ def main():
             else:
                 message = "Bad"
             print(message)
+            print(MENU)
+            choice = input(">>> ").upper()
+        elif choice == "S":
+            for i in range(int(score)):
+                print("*", end=" ")
+            print()
+            print(MENU)
+            choice = input(">>> ").upper()
+        else:
+            print("Invalid choice")
+            print(MENU)
+            choice = input(">>> ").upper()
+    print("Farewell")
 
 
 main()
