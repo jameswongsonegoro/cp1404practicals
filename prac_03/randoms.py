@@ -16,3 +16,6 @@
 # What was the smallest number you could have seen, what was the largest?
 # >>> The smallest number is 2.55400... and the largest is 5.4184...
 
+import random
+
+print(random.randint(1, 100))
