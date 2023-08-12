@@ -1,5 +1,5 @@
 """
-CP1404 Practicals
+CP1404 Practical
 Wimbledon data-reading, processing and displaying
 """
 FILENAME = "wimbledon.csv"
