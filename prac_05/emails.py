@@ -1,5 +1,5 @@
 """
-CP1404 Practical
+CP1404 Practicals
 Email to name dictionary
 """
 
