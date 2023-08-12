@@ -1,7 +1,7 @@
 """
 Word Occurrences
-Estimate: 15 minutes (14.38)
-Actual:
+Estimate: 15 minutes
+Actual: 20 minutes
 """
 
 word_count = {}
